@@ -7,11 +7,43 @@
 body {
     width: 100%;
     height: 100%;
+
 }
 
 html {
     width: 100%;
     height: 100%;
+}
+
+#panel {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -180px;
+    z-index: 5;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+
+#directions-panel {
+    height: 100%;
+    float: right;
+    width: 390px;
+    overflow: auto;
+}
+
+#control {
+    background: #fff;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    display: none;
+}
+
+@font-face {
+    font-family: lobster;
+    src: url(../fonts/lobster.otf);
 }
 
 @media(min-width:767px) {
@@ -38,9 +70,8 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .navbar-brand {
-    font-family: 'Lobster', cursive;
+    font-family: 'lobster', cursive;
     font-size: 180%;
-    color: #fff;
 }
 
 .intro-section {
@@ -86,29 +117,34 @@ of those sections to manage the look and feel of the site. */
     background: url('../images/section6.png');
 }
 
-.google-map-canvas {
-    margin-right: 400px;
-    height: 500px;
-    margin: 0;
+.input-label {
+    padding: 5px;
+    text-align: top;
+    color: #777;
+    background: #c6c6c6;
+    border-radius: 5px;
 }
 
-.google-map-directions {
+.controls {
+    padding: 5px;
+    font-size: 140%;
+    color: #000000;
+    background: #e4e4e4;
+    width: 100%;
+}
+
+.google-map {
+    height: 400px;
+    margin: 5;
+    border-radius: 5px;
+}
+
+.google-panel {
     float: none;
     width: auto;
-    height: 100%;
-    float: right;
-    width: 390px;
-    overflow: auto;
-}
-
-.control {
-    background: #fff;
-    padding: 5px;
-    font-size: 14px;
-    font-family: Arial;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
-    display: none;
+    max-height: 400px;
+    overflow-y: scroll;
+    border-radius: 5px;
 }
 
 .contact-section {
