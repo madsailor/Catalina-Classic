@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Catalina Classic Cruises">
+    <meta name="author" content="David Capron">
 
     <title>Catalina Classic Cruises</title>
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -36,6 +36,8 @@
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -72,7 +74,13 @@
                         <a class="page-scroll" href="#directions">Directions</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#purchase">Purchase</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#links">Links</a>
                     </li>
                 </ul>
             </div>
@@ -86,9 +94,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Your Gateway to Catalina Island<BR><BR></h1>
+                    <h1>Your Gateway to Island Adventure<BR><BR></h1>
                     <h3>Some stuff about how cool CCC is and a button to buy tickets here.<BR><BR></h3>
-                    <a class="btn btn-lg btn-danger page-scroll" href="#contact">
+                    <a class="btn btn-lg btn-danger page-scroll" href="#purchase">
                         <i class="fa fa-ticket fa-2x pull-left"></i> Purchase<br>Tickets</a>
                 </div>
             </div>
@@ -101,8 +109,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Services<BR><BR></h1>
-                    <h3>All the great services we provide.<BR><BR></h3>
-                    <a class="btn btn-default page-scroll" href="#events">Events</a>
+                    <h3>While we are best known for providing ferry service for summer camps on Catalina Island, our services extend well beyond this. We offer year round availability for harbor tours and private events in the Long Beach area, as well as whale watching and ocean excursions, all from our convenient location next to the Queen Mary in Long Beach, CA.  In the summer of 2014 we finalized a contract with Carnival Cruise Lines to provide ferry service to their vessels calling at Avalon Harbor.  With all the great services we provide you'll be sure to find your own adventure with us.<BR><BR></h3>
                 </div>
             </div>
         </div>
@@ -127,7 +134,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>About<BR><BR></h1>
-                    <h3>Some of the history of the company, and the great staff that will make your day.<BR><BR></h3>
+                    <h3>Some of the history of the company, a parallax exposition of our fleet, and dossiers on some of the great staff that will make your day.<BR><BR></h3>
                     <a class="btn btn-default page-scroll" href="#guidelines">Guidelines</a>
                 </div>
             </div>
@@ -140,7 +147,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Guidelines<BR></h1>
-                    <h3>What and what not to bring.<BR><BR></h3>
+                    <h3>What and what not to bring, how long the trip will take, and what we sell onboard.<BR><BR></h3>
                     <a class="btn btn-default page-scroll" href="#directions">Directions</a>
                 </div>
             </div>
@@ -153,13 +160,89 @@
             <div class="row">
                 <div class="col-lg-12">           
                     <div class="jumbotron">
-                    <div id="input" class ="input-label">
-                        <p>Your Location</p>
-                        <input id="start" class="controls" type="text" placeholder="Starting Address" onchange="calcRoute();">
-                    </div>
-                    <div id="directions-panel" class = "google-panel"></div>
-                    <div id="map-canvas" class = "google-map"></div>
+                        <div id="input" class ="input-label">
+                            <p>Your Location</p>
+                            <input id="start" class="controls" type="text" placeholder="Starting Address" onchange="calcRoute();">
+                        </div>
+                        <div id="directions-panel" class = "google-panel"></div>
+                        <div id="map-canvas" class = "google-map"></div>
+                        <div class = "directionfooter">
+                            <p>Catalina Classic Cruises is located at 1046 Queens Highway, Long Beach, CA 90802</p>
+                        </div>
                     </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Section -->
+    <section id="purchase" class="purchase-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                     <!-- Jumbotron Header -->
+        <header class="jumbotron">
+            <h2>Create memories that will last a lifetime</h2>
+            <p>At Catalina Classic Cruises we strive to bring the joy and adventure of the ocean to you.  Contact us today to arrange your own private charter, company event, or harbor cruise.</p>
+            <p><a class="btn btn-large btn-danger page-scroll" href="#contact"">Begin Your Adventure</a>
+            </p>
+        </header>
+
+        <!-- Page Features -->
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="images/toyon.jpg" alt="">
+                    <div class="caption">
+                        <h3>Toyon Bay</h3>
+                        <p>Located on the...portion of the island, Toyon bay provides access to...</p>
+                        <p>
+                            <a href="#contact" class="btn btn-primary page-scroll"><i class="fa fa-ticket pull-left"></i>Purchase Now</a> <a href="#contact" class="btn btn-default page-scroll">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="images/whites.jpg" alt="">
+                    <div class="caption">
+                        <h3>Whites Landing</h3>
+                        <p>Located on the...portion of the island, Whites Landing provides access to...</p>
+                        <p>
+                            <a href="#contact" class="btn btn-primary page-scroll"><i class="fa fa-ticket pull-left"></i>Purchase Now</a> <a href="#contact" class="btn btn-default page-scroll">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="images/fox.jpg" alt="">
+                    <div class="caption">
+                        <h3>Fox Landing</h3>
+                        <p>Located on the...portion of the island, Fox Landing provides access to...</p>
+                        <p>
+                            <a href="#contact" class="btn btn-primary page-scroll"><i class="fa fa-ticket pull-left"></i>Purchase Now</a> <a href="#contact" class="btn btn-default page-scroll">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="images/cherry.jpg" alt="">
+                    <div class="caption">
+                        <h3>Cherry Harbor</h3>
+                        <p>Located on the...portion of the island, Cherry Harbor provides access to...</p>
+                        <p>
+                            <a href="#contact" class="btn btn-primary page-scroll"><i class="fa fa-ticket pull-left"></i>Purchase Now</a> <a href="#contact" class="btn btn-default page-scroll">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
                 </div>
             </div>
         </div>
@@ -170,13 +253,43 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact<BR><BR></h1>
+                    <h1>Contact<BR></h1>
                     <h3>How to get in touch with us.<BR><BR></h3>
-                    <a class="btn btn-default page-scroll" href="#page-top">Home</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Links Section -->
+    <section id="links" class="links-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Informative Sites about Catalina Island<BR></h1>
+<hr>
+                    <a href="http://catalinaislandcamps.com/">Catalina Island Camps</a>
+<hr>
+                    <a href="http://www.catalinaseacamp.org">Catalina Sea Camp</a>
+<hr>
+                    <a href="http://cimi.org">Catalina Island Marine Institute (CIMI)</a>
+<hr>
+                    <a href="http://www.catalinachamber.com">Catalina Chamber of Commerce</a>
+<hr>
+                    <a href="https://en.wikipedia.org/wiki/Santa_Catalina_Island,_California">Catalina Island on Wikipedia</a>
+<hr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Catalina Classic Cruises 2015. Design and layout by <mailto: 'drbluesman@yahoo.com'>David Capron</mailto></p>
+            </div>
+        </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
