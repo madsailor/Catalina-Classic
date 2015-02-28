@@ -108,10 +108,15 @@ of those sections to manage the look and feel of the site. */
 
 .guidelines-section {
     height: 100%;
-    padding-top: 50px;
+    min-height: 950px;
+    padding-top: 70px;
     text-align: center;
-    color: #e6e6e6;
+    color: #777;
     background: url('../images/section5.png');
+}
+
+.policy-text {
+    padding: 20px;
 }
 
 .directions-section {
