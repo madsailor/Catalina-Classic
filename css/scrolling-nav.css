@@ -48,7 +48,7 @@ html {
 
 @media(min-width:767px) {
     .navbar {
-        background: #e4e4e4;
+        background: #f4f4f4;
             font-size: 120%;
 /* The rectangle in which to repeat. 
    It can be fully wide in this case */
@@ -60,19 +60,31 @@ html {
     }
 
     .top-nav-collapse {
-        background: #c6c6c6;
+        background: #e0e0e0;
         padding: 0;
     }
 }
 
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
-of those sections to manage the look and feel of the site. */
+/* The scroller will work with any sort of height; fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children of those sections to manage the look and feel of the site. */
 
-.navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus {
     font-family: 'lobster', cursive;
     font-size: 180%;
+    color: #ae0022; 
 }
+
+.navbar-default .navbar-brand:hover {
+    color: #7c1227; 
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #777; 
+}
+
+.navbar-default .navbar-nav > li > a {
+   color: #222; 
+    }
 
 .intro-section {
     height: 100%;
@@ -82,12 +94,23 @@ of those sections to manage the look and feel of the site. */
     color: #e4e4e4;
 }
 
+.splash {
+    font-family: 'lobster', cursive;
+    font-size: 300%;
+    color: #f4f4f4;
+}
+
 .services-section {
     height: 100%;
     padding-top: 50px;
     text-align: center;
     color: #e6e6e6;
     background: url('../images/section2.png');
+}
+
+.services-section p{
+    padding: 15px;
+    font-size: 150%;
 }
 
 .events-section {
@@ -111,8 +134,12 @@ of those sections to manage the look and feel of the site. */
     min-height: 950px;
     padding-top: 70px;
     text-align: center;
-    color: #777;
+    color: #222;
     background: url('../images/section5.png');
+}
+
+.table > thead > tr > th{
+    text-align: center;
 }
 
 .policy-text {
@@ -129,23 +156,28 @@ of those sections to manage the look and feel of the site. */
 
 .input-label {
     padding: 5px;
+    font-size: 140%;
     text-align: top;
-    color: #777;
-    background: #c6c6c6;
+    color: #222;
+    background: #e0e0e0;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #222;
     border-radius: 5px;
 }
 
 .controls {
-    padding: 5px;
-    font-size: 140%;
-    color: #000000;
-    background: #e4e4e4;
+    padding-left: 5px;
     width: 100%;
 }
 
 .google-map {
     height: 400px;
     margin: 5;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #222;
     border-radius: 5px;
 }
 
@@ -158,7 +190,9 @@ of those sections to manage the look and feel of the site. */
 }
 
 .directionfooter {
+    padding-top: 5px;
     font-size: 160%;
+    color: #222;
 }
 
 .purchase-section {
@@ -166,6 +200,7 @@ of those sections to manage the look and feel of the site. */
     min-height: 800px;
     padding-top: 70px;
     text-align: center;
+    color: #222;
     background: url('../images/section7.png');
 }
 
