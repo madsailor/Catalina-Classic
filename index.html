@@ -24,6 +24,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -90,28 +91,27 @@
     </nav>
 
     <!-- Intro Section -->
-    <section id="intro" class="intro-section" data-speed="1" data-type="background">
+    <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" id="parallax">
                     <div class="splash">
                         <p>Catalina Classic Cruises</p>
                     </div>
                     <hr>
                     <h3>Your gateway to island adventure.</h3>
-
-                </div>
-                    <a class="btn btn-lg btn-danger page-scroll bottomright" href="#purchase">
+                    <a class="btn btn-lg btn-default page-scroll topright" href="#purchase">
                         <i class="fa fa-ticket fa-2x pull-left"></i> Purchase<br>Tickets</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section" data-speed="1" data-type="background">
+    <section id="services" class="services-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12" id="parallax">
                     <h1>Find your unique adventure</h1>
                     <hr>
                     <p><span class="fa-stack"><i class="fa fa-genderless fa-stack-2x"></i><i class="fa fa-anchor fa-stack-1x"></i></span> Ferry service for summer camps on Catalina Island.</p>  
@@ -125,7 +125,7 @@
     </section>
 
     <!-- Events Section -->
-    <section id="events" class="events-section" data-speed="1" data-type="background"">
+    <section id="events" class="events-section bg_parallax">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -137,7 +137,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section" data-speed="1" data-type="background">
+    <section id="about" class="about-section bg_parallax">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -150,16 +150,16 @@
     </section>
 
     <!-- Guidelines Section -->
-    <section id="guidelines" class="guidelines-section" data-speed="1" data-type="background">
+    <section id="guidelines" class="guidelines-section bg_parallax">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="col-lg-8">
-                        <div class="well well-sm">
-                            
-                            <h2>Guidelines</h2>
+
+                        <div class="guidelines-main">    
+
                             <div class="policy-text">
-                                <h4>Each passenger is allowed ## lbs. or ## pieces of luggage.<BR><BR>Please arrive at the landing ## minutes before departure.<BR><BR>For passengers who are prone to seasickness please prepare accordingly.<BR><BR>Many of the camps that we service provide the following "Do & Don't" list:</h4>
+                                <h4>Many of the camps that we service provide the following "Do & Don't" list:</h4>
                             </div>
                             <table class="table table-condensed table-responsive">
                                 <thead>
@@ -232,7 +232,7 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                        </div>
                     <div class="col-lg-4">
                         <div class="well well-sm">
                             <h3>Onboard Menu</h3>
@@ -266,11 +266,11 @@
     </section>
 
     <!-- Directions Section -->
-    <section id="directions" class="directions-section" data-speed="1" data-type="background">
+    <section id="directions" class="directions-section bg_parallax">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">           
-                    <div class="jumbotron">
+
                         <div id="input" class ="input-label">
                             <p>Your Location</p>
                             <input id="start" class="controls" type="text" placeholder="Starting Address" onchange="calcRoute();">
@@ -280,28 +280,28 @@
                         <div class = "directionfooter">
                             <p>Catalina Classic Cruises is located at 1046 Queens Highway, Long Beach, CA 90802</p>
                         </div>
-                    </div> 
+ 
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Purchase Section -->
-    <section id="purchase" class="purchase-section" data-speed="1" data-type="background">
+    <section id="purchase" class="purchase-section bg_parallax">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                      <!-- Jumbotron Header -->
-        <header class="jumbotron">
+
             <h2>Create memories that will last a lifetime</h2>
-            <p>At Catalina Classic Cruises we strive to bring the joy and adventure of the ocean to you.  Contact us today to arrange your own private charter, company event, or harbor cruise.</p>
-            <p><a class="btn btn-large btn-danger page-scroll" href="#contact"">Begin Your Adventure</a>
+            <h4>We strive to bring the joy and adventure of the ocean to you.  Contact us today to arrange your own private charter, event, or harbor cruise.</h4>
+            <p><a class="btn btn-large btn-primary page-scroll" href="#contact"">Begin Your Adventure</a>
             </p>
-        </header>
+
 
         <!-- Page Features -->
         <div class="row text-center">
-            <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="col-md-3 col-sm-6">
                 <div class="thumbnail">
                     <img src="images/toyon.jpg" alt="">
                     <div class="caption">
@@ -314,7 +314,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="col-md-3 col-sm-6">
                 <div class="thumbnail">
                     <img src="images/whites.jpg" alt="">
                     <div class="caption">
@@ -327,7 +327,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="col-md-3 col-sm-6">
                 <div class="thumbnail">
                     <img src="images/fox.jpg" alt="">
                     <div class="caption">
@@ -340,7 +340,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="col-md-3 col-sm-6">
                 <div class="thumbnail">
                     <img src="images/cherry.jpg" alt="">
                     <div class="caption">
@@ -360,19 +360,58 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section" data-speed="1" data-type="background">
+    <section id="contact" class="contact-section bg_parallax">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact<BR></h1>
-                    <h3>How to get in touch with us.<BR><BR></h3>
+                    <h3>You can get in touch with us here.<BR><BR></h3>
+<form class="form-horizontal col-lg-10" role="form" method="post" action="index.php">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+            <?php echo "<p class='text-danger'>$errName</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+            <?php echo "<p class='text-danger'>$errEmail</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+            <?php echo "<p class='text-danger'>$errMessage</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+            <?php echo "<p class='text-danger'>$errHuman</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <?php echo $result; ?>    
+        </div>
+    </div>
+</form> 
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Links Section -->
-    <section id="links" class="links-section" data-speed="1" data-type="background">
+    <section id="links" class="links-section bg_parallax">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -416,8 +455,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script src="js/directions.js"></script>
 
-    <!-- Parallax JavaScript -->
-    <script src="js/parallax.js"></script>
+    <!-- Parallax JavaScript-->
+    <script src="js/parallax.js"></script> 
 
 </body>
 
